@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @parent.name %>
+</p>
+
+<h2>BabySATters</h2>
+<ul>
+  <%= @babysitters.each do |babysitter|%>
+  <li><%= babysitter.first_name%></li>
+  <%end%>
+</ul>
+<%= link_to 'Edit', edit_parent_path(@parent) %> |
+<%= link_to 'Back', parents_path %>

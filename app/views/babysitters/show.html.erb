@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<p>
+Welcome, <%= @babysitter.first_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @babysitter.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @babysitter.last_name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @babysitter.city %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @babysitter.phone_number %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @babysitter.rate %>
+</p>
+
+<%= link_to 'Edit', edit_babysitter_path(@babysitter) %> |
+<%= link_to 'Back', babysitters_path %>
